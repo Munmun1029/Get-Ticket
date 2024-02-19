@@ -112,7 +112,7 @@
                                 <div class="flex   bg-green-300 text-green-500
                                 items-center justify-center p-4 text-xl font-semibold">
                                     <img src="images/seat-green.png" alt="">
-                                    <p><span></span> Seat Left</p>
+                                    <p><span id="seat-left" onclick="selectSeatByClick()">40</span> Seat Left</p>
                                 </div>
                             </div>
 
@@ -149,7 +149,7 @@
                                 <div class="card-body items-center text-center">
                                     <img src="images/fare.png" alt="">
                                     <h2 class="card-title text-xl font-bold">Ticket price</h2>
-                                    <p>550</p>
+                                    <p>550 TK</p>
                                 </div>
                             </div>
                         </div>
@@ -178,19 +178,19 @@
                         <hr class="border-dashed border-2 ">
                         <div class="mt-12">
                             <!-- seat number -->
-                            <div>
+                            <div onclick="setBackgroundColorById()">
                                 <div class="grid grid-cols-2 ">
 
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">A</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">A1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">A2</kbd>
+                                        <kbd id="A1" class="kbd h-[20px] w-[70px]">A1</kbd>
+                                        <kbd id="A2" class="kbd h-[20px] w-[70px]">A2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">A3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">A4</kbd>
+                                        <kbd id="A3" class="kbd h-[20px] w-[70px]">A3</kbd>
+                                        <kbd id="A4" class="kbd h-[20px] w-[70px]">A4</kbd>
                                     </div>
 
                                 </div>
@@ -198,14 +198,14 @@
 
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">B</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">B1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">B2</kbd>
+                                        <kbd id="B1" class="kbd h-[20px] w-[70px]">B1</kbd>
+                                        <kbd id="B2" class="kbd h-[20px] w-[70px]">B2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">B3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">B4</kbd>
+                                        <kbd id="B3" class="kbd h-[20px] w-[70px]">B3</kbd>
+                                        <kbd id="B4" class="kbd h-[20px] w-[70px]">B4</kbd>
                                     </div>
 
                                 </div>
@@ -213,14 +213,14 @@
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">C</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">C1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">C2</kbd>
+                                        <kbd id="C1" class="kbd h-[20px] w-[70px]">C1</kbd>
+                                        <kbd id="C2" class="kbd h-[20px] w-[70px]">C2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">C3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">C4</kbd>
+                                        <kbd id="C3" class="kbd h-[20px] w-[70px]">C3</kbd>
+                                        <kbd id="C4" class="kbd h-[20px] w-[70px]">C4</kbd>
                                     </div>
 
                                 </div>
@@ -228,14 +228,14 @@
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">D</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">D1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">D2</kbd>
+                                        <kbd id="D1" class="kbd h-[20px] w-[70px]">D1</kbd>
+                                        <kbd id="D2" class="kbd h-[20px] w-[70px]">D2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">D3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">D4</kbd>
+                                        <kbd id="D3" class="kbd h-[20px] w-[70px]">D3</kbd>
+                                        <kbd id="D4" class="kbd h-[20px] w-[70px]">D4</kbd>
                                     </div>
 
                                 </div>
@@ -243,84 +243,84 @@
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">E</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">E1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">E2</kbd>
+                                        <kbd id="E1" class="kbd h-[20px] w-[70px]">E1</kbd>
+                                        <kbd id="E2" class="kbd h-[20px] w-[70px]">E2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">E3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">E4</kbd>
+                                        <kbd id="E3" class="kbd h-[20px] w-[70px]">E3</kbd>
+                                        <kbd id="E4" class="kbd h-[20px] w-[70px]">E4</kbd>
                                     </div>
 
                                 </div>
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">F</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">F1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">F2</kbd>
+                                        <kbd id="F1" class="kbd h-[20px] w-[70px]">F1</kbd>
+                                        <kbd id="F2" class="kbd h-[20px] w-[70px]">F2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">F3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">F4</kbd>
+                                        <kbd id="F3" class="kbd h-[20px] w-[70px]">F3</kbd>
+                                        <kbd id="F4" class="kbd h-[20px] w-[70px]">F4</kbd>
                                     </div>
 
                                 </div>
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">G</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">G1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">G2</kbd>
+                                        <kbd id="G1" class="kbd h-[20px] w-[70px]">G1</kbd>
+                                        <kbd id="G2" class="kbd h-[20px] w-[70px]">G2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">G3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">G4</kbd>
+                                        <kbd id="G3" class="kbd h-[20px] w-[70px]">G3</kbd>
+                                        <kbd id="G4" class="kbd h-[20px] w-[70px]">G4</kbd>
                                     </div>
 
                                 </div>
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">H</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">H1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">H2</kbd>
+                                        <kbd id="H1" class="kbd h-[20px] w-[70px]">H1</kbd>
+                                        <kbd id="H2" class="kbd h-[20px] w-[70px]">H2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">H3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">H4</kbd>
+                                        <kbd id="H3" class="kbd h-[20px] w-[70px]">H3</kbd>
+                                        <kbd id="H4" class="kbd h-[20px] w-[70px]">H4</kbd>
                                     </div>
 
                                 </div>
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">I</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">I1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">I2</kbd>
+                                        <kbd id="I1" class="kbd h-[20px] w-[70px]">I1</kbd>
+                                        <kbd id="I2" class="kbd h-[20px] w-[70px]">I2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">I3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">I4</kbd>
+                                        <kbd id="I3" class="kbd h-[20px] w-[70px]">I3</kbd>
+                                        <kbd id="I4" class="kbd h-[20px] w-[70px]">I4</kbd>
                                     </div>
 
                                 </div>
                                 <div class="grid grid-cols-2 mt-4 ">
                                     <div class="flex justify-evenly ">
                                         <h4 class="text-gray-400">J</h4>
-                                        <kbd class="kbd h-[20px] w-[70px]">J1</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">J2</kbd>
+                                        <kbd id="J1" class="kbd h-[20px] w-[70px]">J1</kbd>
+                                        <kbd id="J2" class="kbd h-[20px] w-[70px]">J2</kbd>
 
                                     </div>
 
                                     <div class="flex justify-evenly">
-                                        <kbd class="kbd h-[20px] w-[70px]">J3</kbd>
-                                        <kbd class="kbd h-[20px] w-[70px]">J4</kbd>
+                                        <kbd id="J3" class="kbd h-[20px] w-[70px]">J3</kbd>
+                                        <kbd id="J4" class="kbd h-[20px] w-[70px]">J4</kbd>
                                     </div>
 
                                 </div>
@@ -339,53 +339,59 @@
                         <hr class="border-dashed border-2 ">
                     </div>
 
-                    <div class="overflow-x-auto bg-gray-100 px-8 mt-4 rounded-2xl">
-                        <table class="table">
+                    <div  class="overflow-x-auto bg-gray-100 px-8 mt-4 rounded-2xl">
+                        <table  class="table">
                             <!-- head -->
                             <thead>
                                 <tr>
-                                    <th>Seat <span></span></th>
+                                    <th>Seat <span class="bg-green-600 text-white " onclick="selectSeatByClick()" id="selected-seat">0</span></th>
                                     <th>Class</th>
                                     <th>Price</th>
                                 </tr>
                             </thead>
-                            <tbody class="hidden">
+                            <tbody id="selected-seats-table-body">
                                 <!-- row 1 -->
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td ></td>
+                                    <td>ECONOMIC</td>
+                                    <td>550</td>
                                 </tr>
                                 <!-- row 2 -->
                                 <tr>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td>ECONOMIC</td>
+                                    <td>550</td>
                                 </tr>
                                 <!-- row 3 -->
                                 <tr>
                                     <td></td>
+                                    <td>ECONOMIC</td>
+                                    <td>550</td>
+                                </tr>
+                                <!-- row 4 -->
+                                <tr>
                                     <td></td>
-                                    <td></td>
+                                    <td>ECONOMIC</td>
+                                    <td>550</td>
                                 </tr>
                             </tbody>
                         </table>
                         <hr class="border-2">
                         <br>
                         <div class="flex justify-between">
-                            <p class="text-2xl font-bold">Total Price</p>
-                            <p class="text-2xl font-bold"></p>
+                            <p class="text-xl font-bold" >Total Payment: </p>    
+                            <p><span id="total-payment">0 TK</span></p>
                         </div>
                         <br>
-                        <label class="input input-bordered flex items-center gap-2 ">
-                            <input type="text" class="grow" placeholder="Do You Have Any Coupon?" />
-                            <button class="btn bg-green-600 text-white
+                        <label id="coupon-box" class="input input-bordered flex items-center gap-2 ">
+                            <input  id="coupon-input" type="text" class="grow" placeholder="Do You Have Any Coupon?" />
+                            <button onclick="applyCoupon() "  class="btn bg-green-600 text-white
                             h-12 w-24 font-bold">Apply</button>
                         </label>
                         <br>
                         <div class="flex justify-between">
-                            <p class="text-2xl font-bold">Grand Price</p>
-                            <p class="text-2xl font-bold"></p>
+                            <p class="text-xl font-bold">Grand Price:</p>
+                            <p><span id="grand-payment">0 TK</span></p>
                         </div>
                         <br>
                     </div>
@@ -399,17 +405,17 @@
                         <br>
                         <div>
                             <h2 class="text-xl font-bold">Phone Number*</h2>
-                            <input type="text" placeholder="Enter Your Mobile Number"
+                            <input type="number" placeholder="Enter Your Mobile Number"
                                 class="input input-bordered w-full max-w-s" />
                         </div>
                         <br>
                         <div>
                             <h2 class="text-xl font-bold">Email</h2>
-                            <input type="text" placeholder="Enter Your Email Id"
+                            <input type="email" placeholder="Enter Your Email Id"
                                 class="input input-bordered w-full max-w-s" />
                         </div>
                         <br>
-                        <button class="btn bg-green-600 text-white font-bold w-full max-w-s">Confirm</button>
+                        <button  class="btn bg-green-600 text-white font-bold w-full max-w-s">Confirm</button>
                         <div class="flex justify-between">
                             <a href="">Terms and Conditions</a>
                             <a href="">Cancellation Policy</a>
@@ -423,6 +429,7 @@
         </section>
 
     </main>
+    <script src="Scripts/get-ticket.js"></script>
     <!-- footer -->
     <footer class="mt-20 footer footer-center p-10 bg-base-200 text-base-content rounded bg-black text-white">
 
