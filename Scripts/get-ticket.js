@@ -104,6 +104,10 @@ seatElements.forEach(seat => {
     seat.addEventListener('click', selectSeatByClick);
 });
 
+// go to success page 
+document.getElementById('goToConfirmBtn').addEventListener('click', function () {
+    window.location.href = 'confirmPage.html';
+});
 
 updateSeatCounts();
 updateSelectedSeatsTable();
